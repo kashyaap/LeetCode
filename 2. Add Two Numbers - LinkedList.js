@@ -10,6 +10,14 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
+
+/**
+Learned about appending stuff to likedList
+Plus, do as the questions says, if you start infering then you might face problems with the test cases.
+What happened with me was that, I was reversing the final added sum, but that was a problem, the question specifically said add the reversed nos. 
+1000 cases passed with that solution with the no being reversed but others failed. Plus the fact that var can't store values more than 
+Value. 21024 - 2971, or approximately 1.7976931348623157E+308 so we needed to change everything to bigInt. 
+**/
 var addTwoNumbers = function(l1, l2) {
     
     var varOfLinkedList = function(l1) {
